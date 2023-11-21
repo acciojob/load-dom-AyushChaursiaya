@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Load Example</title>
+    <style>
+        /* Add your CSS styles here if needed */
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <!-- Body is intentionally left empty -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // This function will be executed when the DOM is fully loaded
+            var message = document.createElement('p');
+            message.textContent = 'DOM load success';
+            document.body.appendChild(message);
+        });
+    </script>
 </body>
-
 </html>
